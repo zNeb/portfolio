@@ -10,18 +10,10 @@
 </head>
 <body>
     <%- include('./partials/nav')-%>
-    <section class="hero">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">
-              Hero title
-            </h1>
-            <h2 class="subtitle">
-              Hero subtitle
-            </h2>
-          </div>
-        </div>
-    </section>
+    <%- include('./partials/hero', {
+		heroTitle: 'Projects',
+		heroSubtitle: 'Projects i\'ve worked on.',
+	})-%>
     <%- include('./partials/footer')-%>
 </body>
 
