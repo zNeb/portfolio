@@ -14,6 +14,7 @@ app.set('views', __dirname + '/views')
 app.use(function (req, res, next) {
     res.locals = {
       siteName: 'Matthieu-Jean Habbouche Portfolio',
+      siteUrl: process.env.siteUrl,
     }
     next()
 })
