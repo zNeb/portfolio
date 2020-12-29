@@ -11,11 +11,6 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 
-// Catch errors
-store.on('error', function(error) {
-    console.log(error);
-})
-
 app.use(function (req, res, next) {
     res.locals = {
       siteName: 'Matthieu-Jean Habbouche Portfolio',
