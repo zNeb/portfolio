@@ -17,11 +17,14 @@
 	<div class="columns">
 		<div class="column">
 			<%- include('./partials/card', {
-				proName: 'Name',
-				proUrl: 'Url.',
-				proDesc: 'desc.',
-				imgThumb: '',
-				imgBig: '',
+				proName: 'StatsNite',
+				proUrl: 'statsnite.com',
+				proDesc: 'A stats and info tracker for various games.' +
+				'This project uses official and unofficial game apis to get game info such as items' +
+				' and stores them in mongodb to cache data and avoid rate limits.' +
+				'Using express and ejs users can access the game data on the website.',
+				imgThumb: 'statsniteThumb.png',
+				imgBig: 'statsniteBig.png',
 			})-%>
 		</div>
 		<div class="column">

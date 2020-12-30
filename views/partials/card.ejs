@@ -13,14 +13,16 @@
         </div>
         <div class="media-content">
           <p class="title is-4"><%= proName %></p>
-          <p class="subtitle is-6"><%= proUrl %></p>
+          <p class="subtitle is-6">
+            <a href="https://<%= proUrl %>" target="_blank" rel="noopener">
+              <%= proUrl %>
+            </a>
+          </p>
         </div>
       </div>
   
       <div class="content">
         <%= proDesc %>
-        <br>
-        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
       </div>
     </div>
 </div>
