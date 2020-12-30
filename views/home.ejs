@@ -12,9 +12,9 @@
     <%- include('./partials/nav')-%>
     <%- include('./partials/hero', {
 		heroTitle: 'Projects',
-		heroSubtitle: 'Projects i\'ve worked on.',
+		heroSubtitle: 'Some Projects i\'ve worked on.',
 	})-%>
-	<div class="columns">
+	<div class="columns ml-3 mr-3">
 		<div class="column">
 			<%- include('./partials/card', {
 				proName: 'StatsNite',
@@ -28,10 +28,25 @@
 			})-%>
 		</div>
 		<div class="column">
-		  Second column
+			<%- include('./partials/card', {
+				proName: 'JumpGame',
+				proUrl: 'github.com/zNeb/WinFormsPlatformer',
+				proDesc: 'A stats and info tracker for various games.' +
+				'This project uses official and unofficial game apis to get game info such as items' +
+				' and stores them in mongodb to cache data and avoid rate limits.' +
+				'Using express and ejs users can access the game data on the website.',
+				imgThumb: 'jumpgameThumb.png',
+				imgBig: 'jumpgameBig.png',
+			})-%>
 		</div>
 		<div class="column">
-		  Third column
+			<%- include('./partials/card', {
+				proName: 'Node Tradebot TF2',
+				proUrl: 'github.com/zNeb/node-tradebot-tf2',
+				proDesc: 'Node tradebot changed to tf2.',
+				imgThumb: 'nodetradebotThumb.png',
+				imgBig: 'nodetradebotBig.png',
+			})-%>
 		</div>
 	</div>
     <%- include('./partials/footer')-%>
