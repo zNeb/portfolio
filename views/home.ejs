@@ -16,7 +16,13 @@
 	})-%>
 	<div class="columns">
 		<div class="column">
-			<%- include('./partials/card')-%>
+			<%- include('./partials/card', {
+				proName: 'Name',
+				proUrl: 'Url.',
+				proDesc: 'desc.',
+				imgThumb: '',
+				imgBig: '',
+			})-%>
 		</div>
 		<div class="column">
 		  Second column
