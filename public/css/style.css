@@ -14,6 +14,13 @@ html {
     right: 0;
 }
 
+.tech-grid {
+    grid-template-columns: repeat(auto-fill,minmax(0,128px));
+    justify-content: space-evenly;
+    grid-gap: 5px;
+    display: grid;
+}
+
 #top {
     height: 52px;
 }
