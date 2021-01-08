@@ -60,6 +60,15 @@
 				imgBig: 'nodetradebotBig.png',
 			})-%>
 		</div>
+		<div class="column">
+			<%- include('./partials/card', {
+				proName: 'This Portfolio',
+				proUrl: 'github.com/zNeb/portfolio',
+				proDesc: 'portfolio.',
+				imgThumb: 'portfolioThumb.png',
+				imgBig: 'portfolioBig.png',
+			})-%>
+		</div>
 	</div>
     <%- include('./partials/hero', {
 		heroTitle: 'Technologies',
@@ -154,6 +163,23 @@
 			</div>
 			</article>
 		</div>
+	</div>
+	<%- include('./partials/hero', {
+		heroTitle: 'Contact',
+		heroSubtitle: 'Contact Me.',
+	})-%>
+	<div class="tile is-parent">
+		<article class="tile is-child notification is-success">
+		<div class="content">
+			<p class="title">Email</p>
+			<div class="content">
+				<a href="mailto:habbouche.matthieu@gmail.com">
+					habbouche.matthieu@gmail.com
+				</a>
+				</div>
+			</div>
+		</div>
+		</article>
 	</div>
 	<%- include('./partials/footer')-%>
 </body>
