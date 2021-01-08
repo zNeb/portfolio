@@ -1,5 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .nav-title {
     font-weight: 600;
     font-size: 1.3em;
     color: #ff344d;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+#top {
+    height: 52px;
 }
