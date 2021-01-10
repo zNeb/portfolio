@@ -24,3 +24,7 @@ html {
 #top {
     height: 52px;
 }
+
+.card-static {
+    height: 14em;
+}
